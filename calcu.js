@@ -1,6 +1,7 @@
 var oldval;
 var lastv;
 var result;
+var recentOP;
 function bclick(val) 
 {
     lastv=document.getElementById("result").value
@@ -25,14 +26,25 @@ function cleardisplay() {
 }
 function operation(op)
 {
-    console.log(op)
-    var recentval=document.getElementById("recent").value
-    console.log(recentval)
-    if (recentval) {
-        oldval=document.getElementById("recent").value = recentval+op;
-        // document.getElementById("recent").value=result;
+    
+    var recentresult=document.getElementById("recent").value
+    console.log(recentresult)
+    if (recentresult) {
+        
+        
+        var currentval =document.getElementById("result").value
+        if (currentval) {
+
+            equalclick()
+            oldval = document.getElementById("recent").value =result+op
+            
+        }else{
+            oldval=document.getElementById("recent").value = recentresult+op;
+
+        }
+
     }else{
-      oldval=document.getElementById("result").value+op;
+    oldval=document.getElementById("result").value+op;
     document.getElementById("recent").value=oldval;
     console.log(oldval)
     cleardisplay();  
@@ -41,13 +53,13 @@ function operation(op)
     
 }
 
-function equalclick()
+const equalclick =()=>
 {
 
     console.log(oldval)
     var text=oldval+document.getElementById("result").value
     console.log(text)
-    var result=eval(text)
+     result=eval(text)
     document.getElementById("result").value=""
     document.getElementById("recent").value=result;
 
