@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calcu.js"></script>
+</head>
+<body>
+    <div class="maindiv">
+    <div class="calcu">
+        
+            <div class="titlebar">
+            <img src="titlebar.png" alt="" class="bar" onclick="">
+            <div ><img src="Screenshot 2023-06-08 064149.png" alt="" class="standard"></div> 
+            </div>
+            
+            
+                <div id="display">
+                    <div>
+                   <input type="text"  id="recent" disabled></div>
+                <div><input type="text"  id="result" disabled> </div>
+                </div>
+                
+            
+            
+            <div class="row1">
+                <img src="Screenshot 2023-06-08 071255.png" alt="" class="mcmr">
+                </div>
+
+
+
+
+
+            <div class="row2">
+                    <button onclick="bclick('')" class="button" >x</button>
+                    <button onclick="clearall()" class="button">CE</button>
+                    <button onclick="cleardisplay()" class="button" >C</button>
+                    <button onclick="back()" class="button" ><img src="back.png" alt="" class="back"></button>
+            </div>
+
+
+
+
+            <div class="row2">
+               <button onclick="bclick()" class="button" >x</button>
+            <button onclick="bclick()" class="button">x</sup></button>
+            <button onclick="bclick('%')"class="button">%</button>
+            <button onclick="operation('/')"class="button">/</button>
+            </div>
+
+
+
+
+
+            <div class="row2">
+            <button onclick="bclick(7)" class="numbutton" >7</button>
+            <button onclick="bclick(8)" class="numbutton" >8</button>
+            <button onclick="bclick(9)"class="numbutton" >9</button>
+            <button onclick="operation('*')"class="button" >x</button>
+            </div>
+
+
+
+            <div class="row2">
+            <button onclick="bclick(4)"class="numbutton" >4</button>
+            <button onclick="bclick(5)"class="numbutton">5</button>
+            <button onclick="bclick(6)"class="numbutton" >6</button>
+            <button onclick="operation('-')"class="button">-</button>
+            </div>
+
+
+
+            <div class="row2">
+                <button onclick="bclick(1)" class="numbutton" >1</button>
+                <button onclick="bclick(2)" class="numbutton" >2</button>
+                <button onclick="bclick(3)"class="numbutton" >3</button>
+                <button onclick="operation('+')"class="button">+</button>
+                </div>
+    
+    
+    
+                <div class="row2">
+                <button class="numbutton" >+/-</button>
+                <button onclick="bclick(0)"class="numbutton">0</button>
+                <button onclick="bclick('.')"class="numbutton" >.</button>
+                <button onclick="equalclick()" class="equal"  >=</button>
+                </div>
+
+
+
+    </div>
+    </div>
+</body>
+</html>
